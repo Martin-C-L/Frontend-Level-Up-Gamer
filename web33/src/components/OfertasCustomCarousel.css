@@ -1,0 +1,16 @@
+.custom-carousel-wrapper .carousel-control-prev,
+.custom-carousel-wrapper .carousel-control-next {
+  width: 5%;
+  min-width: 60px;
+  left: -60px;
+  right: auto;
+}
+.custom-carousel-wrapper .carousel-control-next {
+  left: auto;
+  right: -60px;
+}
+.custom-arrow {
+  filter: drop-shadow(0 0 4px #000);
+  width: 48px;
+  height: 48px;
+}

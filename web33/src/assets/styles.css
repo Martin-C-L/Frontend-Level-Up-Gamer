@@ -1,0 +1,419 @@
+/* Flechas del carrusel tipo botón flotante */
+.ofertas-carousel-arrows-medio .carousel-control-prev,
+.ofertas-carousel-arrows-medio .carousel-control-next {
+  width: 44px;
+  height: 44px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #f4f4f4cc;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  opacity: 1;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.ofertas-carousel-arrows-medio .carousel-control-prev:hover,
+.ofertas-carousel-arrows-medio .carousel-control-next:hover {
+  background: #e0e0e0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.22);
+}
+
+.ofertas-carousel-arrows-medio .carousel-control-prev {
+  left: -22px;
+}
+.ofertas-carousel-arrows-medio .carousel-control-next {
+  right: -22px;
+}
+
+.ofertas-carousel-arrows-medio .carousel-control-prev-icon,
+.ofertas-carousel-arrows-medio .carousel-control-next-icon {
+  filter: invert(0.4) grayscale(1);
+  width: 24px;
+  height: 24px;
+}
+/* Flechas del carrusel ofertas un poco más externas */
+.ofertas-carousel-arrows-medio .carousel-control-prev {
+  left: -1.2%;
+}
+.ofertas-carousel-arrows-medio .carousel-control-next {
+  right: -1.2%;
+}
+
+/* Estilos generales */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #000000;
+  padding: 40px;
+  color: #ffffff; /* CORRECCIÓN: Hace visible el texto plano */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Orbitron', Arial, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+.table-responsive {
+  overflow-x: auto;
+  margin: 0 auto;
+  max-width: 900px;
+  border-radius: 18px;
+  background: #23272f;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 0 0 16px 0;
+}
+
+
+
+
+
+
+ .producto img {
+  background: #23272f;
+  color: #ffd700;
+  font-size: 1.1rem;
+}
+.acciones button {
+  padding: 6px 12px;
+  margin: 0 2px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.acciones .btn-info {
+  background: #23272f;
+  color: #ffd700;
+  border: 1px solid #ffd700;
+}
+.acciones .btn-info:hover {
+  background: #ffd700;
+  color: #23272f;
+}
+.acciones .btn-danger {
+  background: #c0392b;
+  color: #fff;
+}
+.acciones .btn-danger:hover {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.total {
+  font-size: 22px;
+  text-align: right;
+  margin: 20px 4% 0 0;
+  color: #ffd700;
+}
+
+
+.producto h3 {
+  font-size: 1.2rem;
+  margin: 8px 0;
+  color: #fff; /* Se mantiene el color blanco */
+}
+
+.producto p {
+  color: #ccc; /* Ajuste para que combine con el fondo oscuro */
+  font-size: 1rem;
+}
+
+.producto button {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: auto; /* Asegura que el botón esté dentro de la ventana */
+}
+
+button {
+  transition: none !important; /* Fuerza la eliminación de cualquier transición */
+}
+
+button:hover {
+  background-color: #555; /* Mantiene el cambio de color sin transición */
+}
+
+/* Estilos del carrito */
+.table-responsive {
+  overflow-x: auto; /* Permite el desplazamiento horizontal en pantallas pequeñas */
+}
+
+table {
+  margin: 0 auto;
+  background: #222;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+  padding: 12px;
+  color: #fff;
+  text-align: center;
+}
+
+th {
+  background: #0077cc;
+  color: white;
+}
+
+td img {
+  width: 60px;
+}
+
+.acciones button {
+  padding: 4px 10px;
+  margin: 0 2px;
+}
+
+.total {
+  font-size: 20px;
+  text-align: right;
+  margin: 20px 10%;
+}
+
+.vaciar, .finalizar {
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.vaciar:hover {
+  background: #c0392b;
+}
+
+.finalizar:hover {
+  background: #219150;
+}
+
+/* Estilos del resumen de compra */
+.resumen-card {
+  max-width: 100%; /* Ajusta el ancho máximo para pantallas pequeñas */
+  margin: 30px auto 0 auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+  padding: 24px;
+  text-align: center;
+}
+
+.resumen-card table {
+  width: 100%;
+  margin-bottom: 16px;
+  border-collapse: collapse;
+}
+
+.resumen-card th,
+.resumen-card td {
+  border-bottom: 1px solid #eee;
+  padding: 8px;
+  font-size: 15px;
+}
+
+.resumen-card th {
+  background: #222;
+  color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.13);
+  padding: 24px;
+  text-align: center;
+}
+
+.resumen-total {
+  font-size: 18px;
+  margin: 10px 0;
+  text-align: right;
+}
+
+/* Estilos del login y registro */
+.card {
+  background-color: #222; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card input[type="email"],
+.card input[type="password"],
+.card input[type="text"],
+.card input[type="date"] {
+  background: #222;
+  color: #fff;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form-label {
+  color: #ccc; /* Texto más claro para etiquetas */
+}
+
+.form-control {
+  background-color: #333; /* Fondo oscuro para inputs */
+  color: #fff; /* Texto blanco */
+  border: 1px solid #444; /* Borde oscuro */
+  border-radius: 5px;
+}
+
+.form-control:focus {
+  border-color: #005fa3; /* Color de enfoque */
+  box-shadow: 0 0 5px rgba(0, 95, 163, 0.5);
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.extra-options {
+  display: flex; /* Alinea el botón y el texto en una fila */
+  align-items: center; /* Centra verticalmente el contenido */
+  gap: 8px; /* Espaciado entre el botón y el texto */
+}
+
+.extra-options label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #ccc; /* Color del texto */
+  font-size: 0.9rem; /* Tamaño de fuente ajustado */
+}
+
+.extra-options input[type="checkbox"] {
+  margin: 0; /* Elimina el margen del botón */
+  transform: scale(1.2); /* Ajusta el tamaño del botón */
+}
+
+.extra-options a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.extra-options a:hover {
+  text-decoration: underline;
+}
+
+#mensaje {
+  font-size: 1.2em;
+  margin-top: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Botones log y regi */
+.btn {
+  background: linear-gradient(90deg, #222 60%, #444 100%);
+  color: #fff;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  margin: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.btn-primary {
+  background-color: #005fa3;
+  border: none;
+}
+
+.btn-secondary {
+  background-color: #444;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #0077cc; /* Color más claro en hover */
+  transform: scale(1.03); /* Efecto de hover sutil */
+}
+
+.btn:active {
+  transform: scale(0.97); /* Efecto al presionar */
+}
+
+.text-muted {
+  color: #aaa;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .producto {
+    padding: 12px;
+  }
+
+  .total {
+    font-size: 16px;
+    margin: 10px 5%;
+  }
+
+  .vaciar, .finalizar {
+    padding: 6px 12px;
+  }
+
+  .display-4 {
+    font-size: 1.8rem; /* Reduce el tamaño del encabezado en pantallas pequeñas */
+  }
+
+  .btn {
+    font-size: 0.8rem; /* Botones aún más compactos en pantallas pequeñas */
+    padding: 6px 12px;
+  }
+
+  img {
+    max-width: 100%; /* Asegura que las imágenes no se desborden */
+  }
+
+  .productos {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta el diseño en pantallas pequeñas */
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+  }
+}
